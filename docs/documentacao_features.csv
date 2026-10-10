@@ -1,0 +1,11 @@
+feature,tipo,como foi construída,o que representa
+idade,Cadastro,dim_cliente.idade,Idade do cliente
+populacao,Apoio (fonte 3),dim_cidade.populacao via JOIN,Porte da cidade
+dias_cadastro,Temporal,corte − data_cadastro (dias),Tempo de relacionamento
+qtd_pedidos,Agregação,COUNT(pedidos antes do corte),Frequência de compra
+total_gasto,Agregação,SUM(valor antes do corte),Valor total gasto
+ticket_medio,Agregação,AVG(valor antes do corte),Gasto médio por pedido
+dias_desde_ultimo,Temporal (recência),corte − MAX(data_pedido); 999 se nunca comprou,Há quanto tempo comprou
+categorias_distintas,Agregação,COUNT(DISTINCT categoria),Variedade de consumo
+canal,Categórica (one-hot),OneHotEncoder(canal),Canal de cadastro
+cidade,Categórica (one-hot),OneHotEncoder(cidade),Localização

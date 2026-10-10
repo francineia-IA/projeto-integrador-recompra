@@ -1,0 +1,15 @@
+{
+  "entrada: clientes": 630,
+  "entrada: pedidos": 1818,
+  "clientes: duplicados removidos": 30,
+  "clientes: cidades nulas -> 'Desconhecida'": 40,
+  "clientes: idades inválidas": 8,
+  "clientes: idades nulas (preenchidas com mediana)": 48,
+  "pedidos: duplicados removidos": 35,
+  "pedidos: valores com 'R$' convertidos": 60,
+  "pedidos: sem valor/data removidos": 15,
+  "pedidos: outliers limitados": 51,
+  "pedidos: cliente inexistente removidos (integridade)": 5,
+  "saída: clientes": 600,
+  "saída: pedidos": 1763
+}
